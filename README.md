@@ -4,7 +4,7 @@
 
 There are 6 exercises in total, ranging in difficulty and in no particular order.
 
-We will be testing:
+We will be testing your skills on the following:
 
 - GIT
 - PHP
@@ -24,9 +24,9 @@ There are a few guidelines we would like you to stick to:
 
 ### Submitting
 
-1. Make a fork from this repository.
+1. Make a fork of the [developer-test](https://github.com/Vehicle-Vision/developer-test) repository.
 2. Commit your changes as you go.
-3. when completed, make a PR to this repository.
+3. When completed, make a [PR](https://github.com/Vehicle-Vision/developer-test/pulls) to this repository.
 
 ## Exercises
 
@@ -47,13 +47,13 @@ The player's rank in the league is calculated using the following logic:
 
 ### Exercise Two (CSS)
 
-[ ] Make the  sidebar (aside) fit as expected on the right. *Hint - It just needs a tweak.*  
-[ ] Make the footer be positioned at the bottom but not overlap the content when the window is smaller in height.
+[ ] Make the  sidebar `<aside>` fit as expected on the right. *Hint - It just needs a tweak.*  
+[ ] Make the `<footer>` be positioned at the bottom but not overlap the content when the window is smaller in height.
 
 ### Exercise Three (Forms)
 
 [ ] Build a simple form that accepts a URL.  
-[ ] Use PHP to query a URL (example below) and pass back the size of the URL in MB.
+[ ] Use PHP to query a URL (example below) and pass back the size of the URL in `MB`.
 
 Example URL to query:  
 https://apps.vehicle-vision.com/sales/app/files/android135/vv_sales.apk
@@ -64,9 +64,9 @@ https://apps.vehicle-vision.com/sales/app/files/android135/vv_sales.apk
 
 ### Exercise Five (Javascript)
 
-Using jQuery, implement the setup function that registers a click event handler and implements the following:
+Using jQuery, implement the `setup()` function that registers a click event handler and implements the following:
 
-[ ] When the button of class remove is clicked, its parent `<div>` element should be removed from the gallery.
+[ ] When the button of class `remove` is clicked, its parent `<div>` element should be removed from the gallery.
 
 ### Exercise Six (MySQL)
 
@@ -74,7 +74,7 @@ There are 3 mistakes in the MySQL query.
 
 [ ] Document the 3 mistakes and what you would do to fix them
 
-*They are general mistakes i.e. you do not need DB access to spot them.*
+*These are general mistakes i.e. you do not need DB access to spot them.*
 
 ## Improvements
 
