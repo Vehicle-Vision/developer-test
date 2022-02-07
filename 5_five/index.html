@@ -10,17 +10,23 @@
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
-        <script type="text/javascript"> 
+       
+       <script type="text/javascript"> 
             function setup() 
             {
-                // Write your code here.
+                document.querySelectorAll('.remove')
+                 .forEach(button => 
+                 button.addEventListener('click', () => button.parentElement.remove())
+                         )
             }   
             $(document).ready(function()
             {
                 setup();
             });
         </script>
+
     </head>
+
     <body>
         <div class="image">
             <img src="https://goo.gl/kjzfbE" alt="First">
@@ -31,4 +37,5 @@
             <button class="remove">X</button>
         </div>
     </body>
+
 </html>
