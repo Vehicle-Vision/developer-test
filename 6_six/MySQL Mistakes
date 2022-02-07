@@ -1,0 +1,2 @@
+The first mistake that i have found is on line 19, the statement used is 'NOT NULL AND' this can't 
+be used in a select statement as it has to be 'IS NOT NULL' or 'IS NULL AND'.
