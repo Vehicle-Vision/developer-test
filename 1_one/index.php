@@ -27,8 +27,19 @@ class LeagueTable
 
     public function playerRank(int $rank) : string
     {
+        $ranks = $this->standings;
+        uasort($ranks, function ($a, $b) {
+            // sort by score
+            if ($a['score'] != $b['score']) 
+                return ($a['score'] > $b['score']) ? -1 : 1;
+            // equal! sort by games played
+            if ($a['games_played'] != $b['games_played'])
+                return ($a['games_played'] < $b['games_played']) ? -1 : 1;
+            // equal! sort by index
+            return ($a['index'] < $b['index']) ? -1 : 1;
+        });
         // - Your code here
-        return '';
+        return array_keys($ranks)[$rank-1];
     }
 }
 
