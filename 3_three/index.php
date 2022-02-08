@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-	<div class="container" style="margin-top:20px;margin-right: 50%;">
+  <div class="container" style="margin-top:20px;margin-right: 50%;">
     <div class="card shadow m-4">
       <div class="container align-items-center">
         <form method="post" action="index.php" enctype="multipart/form-data">
@@ -18,8 +18,8 @@
             <br>
           <input name="postURL" class="btn btn-lg btn-primary btn-block" value="Get Size" type="submit">
             <br>
-						<?php 
-								if(isset($_POST['postURL'])):
+	  <?php 
+		if(isset($_POST['postURL'])):
                   $url = $_POST['url'];
                   $curl = curl_init($url);
                   curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
@@ -29,9 +29,9 @@
                   curl_exec($curl);
                   $fileSize = curl_getinfo($curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD);
                   $fileSizeMB = round($fileSize / 1048576,2);
-							?>
-								<h6 style="color:green;"><?php echo $fileSizeMB . ' MB '?></h6>
-							<?php endif; ?>
+	  ?>
+		<h6 style="color:green;"><?php echo $fileSizeMB . ' MB '?></h6>
+	<?php endif; ?>
         </form>
       </div>
     </div>
