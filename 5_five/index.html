@@ -13,7 +13,9 @@
         <script type="text/javascript"> 
             function setup() 
             {
-                // Write your code here.
+                $(".remove").on('click', function() {
+                    $(this).parent().remove();
+                });
             }   
             $(document).ready(function()
             {
