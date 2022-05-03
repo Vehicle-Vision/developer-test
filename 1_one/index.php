@@ -27,8 +27,16 @@ class LeagueTable
 
     public function playerRank(int $rank) : string
     {
-        // - Your code here
-        return '';
+      // - Your code here
+        $columns_1 = array_column($this->standings, 'game_played');
+		    $columns_2 = array_column($this->standings, 'score');
+	    	array_multisort($columns_1, SORT_ASC, $columns_2, SORT_DESC, $this->standings);
+
+        foreach($this->standings as $player => $score){
+            if ($this->standings[$player]['index']== 1)
+            return $player;
+        }
+    
     }
 }
 
