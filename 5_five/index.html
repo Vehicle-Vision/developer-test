@@ -13,7 +13,15 @@
         <script type="text/javascript"> 
             function setup() 
             {
-                // Write your code here.
+                 var image = document.querySelectorAll(".remove").forEach(
+                    function (btn)
+                    {
+                        
+                        btn.addEventListener('click', function(){
+                        btn.parentElement.remove()
+                            
+                        })
+                    });
             }   
             $(document).ready(function()
             {
@@ -28,7 +36,7 @@
         </div>
         <div class="image">
             <img src="https://goo.gl/d2JncW" alt="Second">
-            <button class="remove">X</button>
+            <button class="remove" >X</button>
         </div>
     </body>
 </html>
