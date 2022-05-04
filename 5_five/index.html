@@ -1,33 +1,33 @@
 <!--
   # EXERCISE FIVE
+  
+  Using jQuery, implement the setup function that registers a click event handler and implements the following logic: 
+  When the button of class remove is clicked, its parent <div> element should be removed from the gallery.
 -->
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Exercise five</title>
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
             crossorigin="anonymous"></script>
-        <script type="text/javascript"> 
-            function setup() 
-            {
+        <script type="text/javascript">
+            function setup() {
                 // Write your code here.
-            }   
-            $(document).ready(function()
-            {
+            }
+            $(document).ready(function () {
                 setup();
             });
         </script>
     </head>
     <body>
         <div class="image">
-            <img src="https://goo.gl/kjzfbE" alt="First">
+            <img src="one.png" alt="First">
             <button class="remove">X</button>
         </div>
         <div class="image">
-            <img src="https://goo.gl/d2JncW" alt="Second">
+            <img src="two.png" alt="Second">
             <button class="remove">X</button>
         </div>
     </body>
