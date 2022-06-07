@@ -27,8 +27,13 @@ class LeagueTable
 
     public function playerRank(int $rank) : string
     {
-        // - Your code here
-        return '';
+        array_multisort(
+            array_column($this->standings, 'score'),  SORT_DESC,
+            array_column($this->standings, 'games_played'), SORT_ASC,
+            array_column($this->standings, 'index'), SORT_ASC,
+          $this->standings);
+                 
+          return array_keys($this->standings)[$rank-1];
     }
 }
 
