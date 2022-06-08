@@ -11,7 +11,9 @@
             crossorigin="anonymous"></script>
         <script type="text/javascript">
             function setup() {
-                // Write your code here.
+              $( ".remove" ).click(function() {
+				  $(this).parent().remove();
+});
             }
             $(document).ready(function () {
                 setup();

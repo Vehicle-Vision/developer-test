@@ -27,8 +27,21 @@ class LeagueTable
 
     public function playerRank(int $rank) : string
     {
-        // - Your code here
-        return '';
+		$ranks = $this->standings;
+		$sortedRanks = [];
+		$latestRank = 1;
+		$Index = array_column($ranks, 'index');
+		$gamesPlayed = array_column($ranks, 'games_played');
+		$Score = array_column($ranks, 'score');
+		array_multisort (  $Score,SORT_DESC, $gamesPlayed ,  SORT_ASC,$Index, SORT_ASC, $ranks ); // sorting the score, games played and index to find the player rank
+		foreach($ranks as $player_name => $value)
+         {
+            $sortedRanks['rank'] = $latestRank;
+            $sortedRanks[$latestRank]['name'] = $player_name;
+            $latestRank++;
+         }
+        
+        return $sortedRanks[strval($rank)]["name"];
     }
 }
 
