@@ -9,26 +9,36 @@
         <title>Company page</title>
     </head>
     <body>
-        <paragraph>Welcome! Here you can find the following things:</paragraph>
+        <main>
+	    <section>
+		<h1>Welcome! Here you can find the following things:</h1>
+		
         <ol>
-            <em><li><a href="#logo">Company's logo</a></li></em>
+            <li><em><a href="#logo">Company's logo</a></em></li>
             <li><a href="#employees">List of employees</a></li>
         </ol>
+		</section>
 
-        <h1>Company's logo
-        <paragraph>Company uses the following logos:</paragraph>
+        <section>
+        <h2>Company's logo</h2>
+        <p>Company uses the following logos:</p>
         <ul>
-            <li>New logo:</li><img source="new_logo.gif"/>
-            <li>Old logo:</li><img source="old_logo.gif"/>
+            <li>New logo:<img src="new_logo.gif" alt="New Logo"/></li>
+            <li>Old logo:<img src="old_logo.gif" alt="Old logo"/></li>
         </ul>
-
-        <h1>List of employees
+        </section>
+		<section>
+        <h2>List of employees</h2>
         
-        <thead>
-            <th>First name</th>
-            <th>Last name</th>
-        </thead>
+        
         <table>
+			<thead>
+				<tr>
+					<th>First name</th>
+					<th>Last name</th>
+				</tr>
+			</thead>
+			<tbody>
             <tr>
                 <td>Mary</td>
                 <td>Williams</td>
@@ -37,6 +47,9 @@
                 <td>James</td>
                 <td>Smith</td>
             </tr>
+			</tbody>
         </table>
+		</section>
+		</main>
     </body>
 </html>
