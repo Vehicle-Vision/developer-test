@@ -1,5 +1,10 @@
 /*
 	# EXERCISE SIX (Bonus)
+	
+	1. First mistake is UNIXTIME , It should be used as UNIX_TIMESTAMP()/
+	2. We cannot use DATE_NOW() We can use NOW(), CURDATE() or DATE() for current date.
+	3. 'type' is unknown . Table alias is missing.
+	
 */
 
 SELECT A.nid, A.title, UNIXTIME(A.created) AS created, J4.`field_brand_theme_value` AS brand, 
