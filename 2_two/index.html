@@ -8,9 +8,16 @@ body {
     font-family: Arial;
     padding: 0px;
     margin: 0px;
+	display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 header {
     background: lightblue;
+}
+main{
+	flex: 1;
 }
 section {
     background: lightgreen;
@@ -23,8 +30,10 @@ article {
 }
 aside {
     background: pink;
-    width: 25%;
+    width: 21%;
     float: right;
+    padding: 1%;
+	
 }
 footer {
     font-weight: bold;
@@ -34,7 +43,7 @@ footer {
     color: white;
 }
 header, article, section, .module {
-    padding: 15px;
+    padding: 1%;
 }	
 h1, h2, h3 {
     margin-top: 0px;
